@@ -1,9 +1,16 @@
       /* Google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
-        /*shere styles*/
-*{font-family: 'Work Sans', sans-serif;}
 
-.btn-primary{}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+       
+       /*shere styles*/
+
+*{font-family: 'Work Sans', sans-serif;margin: 0;}
+
+.btn-primary{border-radius: 8px;
+  background: #FF900E;color:white;
+font-size: 1.25rem;border:0;border-radius: 5px;
+font-weight: 600;cursor: pointer;padding: 15px 20px;
+margin: 10px;}
 
        /*header styles*/
   header{
@@ -31,13 +38,63 @@ nav li a{text-decoration: none;
 .banner-content{
   max-width: 800px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 .banner-title{color: var(--Dark-01, #131313);
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: 700; margin-top: 50px;
 }
 .banner-description{
   font-size: 1rem;
   color:#727272;
+  margin: 20px auto;
 }
+.banner img{width: 100%;
+margin-top:20px}
+
+
+
+        /*Responsive media queries*/
+
+          /*mobile devices*/
+ @media screen and (max-width: 576px) {
+    header{
+      padding:20px;
+    }
+    nav{flex-direction: column;}
+ }  
+          /*tablet or medium devices */
+  @media screen and(min-width:576px) and (max-width:960px){
+
+    nav{flex-direction: column;}
+    header{
+      padding:50px;
+    }
+  }        
+
+  /*main styles*/
+
+  main{max-width: 1440px;
+  margin: 0 auto;}
+
+
+       /*teams styles*/
+
+       .teams-container{display: flex;align-items:center;}
+       .teams-image-container{display: grid;
+      grid-template-columns: repeat(2,1fr);
+    gap:1rem;}
+
+    .teams-content{
+      padding-left: 70px;padding-right: 70px;
+    }
+ .teams-title{font-size: 2.8rem;}
+.teams-title .quick-list{
+  color:#727272;
+font-weight: 600;
+}
+.teams-title .text-features{
+  color: #FF900E;font-weight: 700;
+}
+
+
